@@ -1,0 +1,75 @@
+SUFIX OptimiZer V1.1.3
+
+1. Décompresser entièrement le package dans un dossier local accessible en écriture.
+2. Lancer build_exe.cmd.
+3. Le builder crée/actualise .venv, installe requirements.txt, exécute les tests automatiques, puis compile uniquement si tous les tests réussissent.
+4. L'exécutable est créé dans : dist\Sufix OptimiZer V1.1.3.exe
+5. En cas d'erreur, consulter build_log.txt et utiliser build_debug.cmd.
+
+Les bases base_article_supportage.xlsx et sufix_profiles.xlsx sont embarquées dans l'EXE. Elles ne doivent pas être distribuées séparément aux utilisateurs finaux.
+
+Points principaux V1.1.3 :
+- lecture et validation de l'espacement entre supports ;
+- traitement spécifique des chemins de câbles et couvercles vendus en barres de 3 m ;
+- interface plein écran avec navigation, scroll et glisser-déposer ;
+- Contrôles de cohérence et feuille Contrôles ;
+- KPI et comparaison offre initiale / offre optimisée ;
+- modes d'optimisation matière / équilibré / simplicité fabrication ;
+- détection automatique du PDF associé ;
+- écran final permettant une nouvelle étude sans fermer l'application ;
+- refactorisation en moteur métier + interface + bootstrap ;
+- tests automatiques intégrés.
+
+
+ÉVOLUTIONS V1.1.3
+
+- Lecture PDF : prise en charge du libellé SUFIX réel
+  « Espace entre les supports » en complément de « Espacement entre supports ».
+- Les espacements détectés dans le PDF sont préremplis automatiquement dans
+  l'écran de vérification.
+- Détection compatible avec les valeurs entières et décimales :
+  1 m, 1,3 m, 1,5 m, 2,2 m, 2,5 m, 3 m, 5,5 m, 0,675 m, etc.
+- Secours spatial ajouté lorsque le moteur PDF découpe le libellé ou sa valeur.
+- Les pages ne contenant ni nombre de supports ni espacement restent gérées
+  comme des châssis, selon le fonctionnement V1.1.0.
+- Écran final : le rendement matière est affiché avec exactement deux chiffres
+  après la virgule.
+
+Validation réalisée sur 7 rapports PDF SUFIX fournis le 19/08/2026.
+
+
+ÉVOLUTIONS V1.1.3
+
+- Page d'accueil : ajout de cinq vignettes fonctionnelles :
+  Lecture PDF automatique, Nomenclature par support, Optimisation des découpes,
+  Export Excel professionnel et Export vers EQ Harmony.
+- Le bloc Pré-requis est positionné sous ces vignettes.
+- Paramètres d'optimisation : les modes sont désormais des choix multiples.
+  Les trois modes sont cochés par défaut.
+- Chaque mode sélectionné est calculé indépendamment à partir des mêmes
+  longueurs commerciales et des mêmes données d'étude.
+- Écran Étude terminée : comparaison homogène des KPI de tous les modes.
+- Identification automatique des points forts : meilleur rendement,
+  moins de plans, moins de barres et moins de longueur achetée.
+- Exports EQ disponibles mode par mode, avec cases Offre initiale /
+  Offre optimisée, ainsi qu'un bouton pour générer tous les exports cochés.
+- Noms des exports optimisés :
+  EQ_IMPORT_OPTI_MATIERE_OFFRE
+  EQ_IMPORT_OPTI_EQUILIBRE_OFFRE
+  EQ_IMPORT_OPTI_FABRICATION_OFFRE
+- Le classeur Excel contient une feuille Opti globale et une feuille
+  Plan découpe pour chaque mode calculé, ainsi qu'une Synthèse optimisation
+  comparative.
+
+
+CORRECTIF AFFICHAGE ADAPTATIF V1.1.3
+
+- L'écran d'accueil choisit automatiquement une image adaptée à la résolution disponible.
+- L'image conserve ses proportions : aucun élément n'est coupé verticalement.
+- Les boutons Quitter / Démarrer et la version sont repositionnés et redimensionnés proportionnellement.
+- La taille minimale de la fenêtre dépend maintenant de la résolution réelle du poste.
+- En résolution/hauteur réduite, titres, header, footer, marges et boutons utilisent un mode compact.
+- Les cartes de modes d'optimisation occupent automatiquement la largeur disponible.
+- Les listes de supports et de longueurs restent scrollables et acceptent la molette de la souris.
+
+Le numéro de version reste V1.1.3 : il s'agit d'un correctif d'interface du package V1.1.3.

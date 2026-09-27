@@ -1,0 +1,17 @@
+REVUE TECHNIQUE ET OPTIMISATIONS - V1.0.9
+
+Révision interne sans montée de version ni changement volontaire du résultat métier.
+
+- Une seule ouverture du PDF pour le sommaire, les pages supports et les quantités.
+- Cache des textes PDF déjà extraits.
+- Pas d'extract_words() si le libellé Nombre de supports est absent.
+- sufix_profiles.xlsx chargé une seule fois puis partagé entre les moteurs.
+- Cache des normalisations de textes et codes.
+- Styles Excel identiques réutilisés au lieu d'être recréés pour chaque cellule.
+- Best-pack : suppression d'un parcours redondant des découpes.
+- Imports inutilisés supprimés, imports récurrents remontés au niveau module.
+- Base article explicitement fermée après lecture.
+
+Compatibilité conservée : Version 1.0.9, base_article_supportage.xlsx et formats de sortie identiques.
+
+- PyMuPDF ajouté comme moteur PDF principal très rapide, avec pdfplumber conservé en secours automatique.

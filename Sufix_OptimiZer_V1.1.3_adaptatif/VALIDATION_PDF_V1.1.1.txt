@@ -1,0 +1,27 @@
+VALIDATION PDF — SUFIX OptimiZer V1.1.1
+Date : 2026-08-19
+
+7 rapports SUFIX 3D PRO fournis ont été analysés :
+- Affaire FTV.pdf
+- Alil+.pdf
+- Archives MEL Fictif.pdf
+- CASTORAMA.pdf
+- Hopital de Lille.pdf
+- MANGO C_C ST QUENTIN MONTIGNY LE BRETONNEUX (6).pdf
+- TEST TE 20012026 (1).pdf
+
+Constat principal :
+les rapports utilisent le libellé « Espace entre les supports » plutôt que
+« Espacement entre supports » dans de nombreux cas.
+
+31 pages contenant une valeur d'espacement ont été contrôlées.
+31/31 valeurs ont été détectées correctement par l'extracteur V1.1.1.
+
+Valeurs observées et prises en charge :
+0,675 m ; 1 m ; 1,3 m ; 1,5 m ; 2 m ; 2,2 m ; 2,5 m ; 3 m ; 5,5 m.
+
+Un cas de châssis ne contenant pas de champ d'espacement a également été
+contrôlé : aucune valeur parasite n'a été inventée.
+
+La fenêtre de vérification des supports conserve la possibilité de corriger
+manuellement les valeurs avant traitement.

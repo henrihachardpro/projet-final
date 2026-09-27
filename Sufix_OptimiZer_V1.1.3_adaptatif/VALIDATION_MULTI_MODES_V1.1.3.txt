@@ -1,0 +1,49 @@
+VALIDATION MULTI-MODES — SUFIX OptimiZer V1.1.3
+Date : 2026-08-19
+
+Validation fonctionnelle réalisée sur l'étude exemple historique
+SCRIPT PYTHON SUFIX.csv / SCRIPT PYTHON SUFIX.pdf.
+
+Les trois modes ont été calculés simultanément avec les mêmes données et les
+mêmes longueurs commerciales autorisées.
+
+Résultats observés sur ce jeu de test :
+
+Économie matière
+- Barres optimisées : 104
+- Longueur optimisée : 203 m
+- Chute : 5,02 m
+- Rendement matière : 97,53 %
+- Plans distincts : 16
+
+Équilibré
+- Barres optimisées : 104
+- Longueur optimisée : 203 m
+- Chute : 5,02 m
+- Rendement matière : 97,53 %
+- Plans distincts : 16
+
+Simplicité de fabrication
+- Barres optimisées : 124
+- Longueur optimisée : 205 m
+- Chute : 7,02 m
+- Rendement matière : 96,58 %
+- Plans distincts : 14
+
+Constat :
+sur cet exemple, les modes Économie matière et Équilibré aboutissent au même
+optimum parmi les plans candidats. Le mode Simplicité de fabrication réduit
+le nombre de schémas de découpe distincts au prix d'une légère augmentation
+de la longueur achetée. Ce comportement est conforme à l'objectif des modes.
+
+Le classeur de test a été généré avec les feuilles distinctes suivantes :
+- Synthèse optimisation
+- Opti globale - Matière
+- Plan découpe - Matière
+- Opti globale - Équilibré
+- Plan découpe - Équilibré
+- Opti globale - Fabrication
+- Plan découpe - Fabrication
+
+La suite de tests intégrée comporte 13 tests et est exécutée automatiquement
+par le builder avant compilation.

@@ -1,0 +1,12 @@
+{
+  "base_article_supportage": {
+    "version": "Code article V1.0.9 / package 1.1.2",
+    "date": "2026-08-19",
+    "sha256_12": "3fb3201ff691"
+  },
+  "sufix_profiles": {
+    "version": "Package 1.1.2",
+    "date": "2026-08-19",
+    "sha256_12": "a76d4de80c13"
+  }
+}
