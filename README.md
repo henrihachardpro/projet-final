@@ -14,17 +14,27 @@ Echange avec l'équipe projet sur les retours et les solutions possibles (vis-à
 ## La problématique initiale
 
 Le logiciel dans sa version finale ne permet pas de répondre à toutes les problématiques du réseau commercial :
-
-Export de la liste de matériel vers l'ERP non disponible
-Calcul de chutes intégré au logiciel mais pas d'optimisation des découpes 
-Un Export .csv est disponbile mais est incomplet et .pdf professionnel (qui contient des informations intéressantes mais non structurées)
+- Export de la liste de matériel vers l'ERP non disponible
+- Calcul de chutes de matériels intégré au logiciel mais pas d'optimisation des découpes 
+- Un Export .csv est disponbile mais est incomplet et .pdf professionnel (qui contient des informations intéressantes mais non structurées)
 
 Tout cela nécessite un retraitement manuel pour réaliser un devis cohérent
 
+## Solution proposée
+
+Développement d'un outil permettant :
+- de lire les fichiers en sortie du logiciel
+- d'automatiser toutes les étapes du processus pour créer un devis
+
+## Objectif métier
+- Gagner du temps
+- Proposer un meilleur service à nos clients
+- Augmenter notre marge commerciale sans faire chuter les volumes de ventes
+
 ## Technologies utilisées
-Python
-Bases excel (référentiels internes)
-IA générative
+- Python
+- Bases excel (référentiels internes)
+- IA générative
 
 ## Contenu
 Soutenance Data Analyst & IA - Henri Hachard.pptx : Présentation
